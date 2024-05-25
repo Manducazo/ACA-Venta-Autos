@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<title>Registrar</title>
+</head>
+<body>
+
+
+	<form action="login_registrar.php" method="POST">
+		
+		<h2>Registrar una nueva cuenta</h2>
+		<input type="text" placeholder="&#128273; Nombre" name="Nombre" required>
+		<input type="text" placeholder="&#128273; Apellido" name="Apellido" required>
+		<input type="number" placeholder="&#128273; Telefono" name="Telefono" required>
+		<input type="text" placeholder="&#128273; Correo" name="Correo" required>
+		<input type="text" placeholder="&#128273; Usuario" name="Usuario" required>
+		<input type="password" placeholder="&#128274; Contraseña" name="Contrasena" required>
+		<center><h3>Id Rol: Escriba el numero segun el rol</h3></center>
+		<center><h3>1 - Comprador, 2 - Vendedor, 3 - Doble</h3></center>
+		<input type="number" placeholder="&#128274; Rol" name="Rol">
+		<input type="submit" value="Registrar" name="btnregistrar">
+		<br>
+
+		<a href="iniciar.html" style="float: right">Regresar</a>
+		<a href="index.html" style="float:left;">Regresar a la pagina principal</a>
+
+	</form>
+
+</body>
+</html>
