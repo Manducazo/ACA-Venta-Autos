@@ -4,11 +4,11 @@ include("conexion.php");
 
 $Nombre = $_POST["Nombre"];
 $Apellido = $_POST["Apellido"];
-$Telefono = $_POST[Telefono];
+$Telefono = $_POST['Telefono'];
 $Correo = $_POST["Correo"];
 $Cuenta = $_POST["Usuario"];
 $Contrasena = $_POST["Contrasena"];
-$Rol = $_POST[Rol];
+$Rol = $_POST['Rol'];
 
 //Login
 if(isset($_POST["btningresar"]))

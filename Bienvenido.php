@@ -3,7 +3,7 @@
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "aca2_tecnologia";
+$dbname = "venta_autos";
 
 $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 
