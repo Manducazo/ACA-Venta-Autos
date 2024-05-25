@@ -13,12 +13,12 @@ $Rol = $_POST['Rol'];
 //Login
 if(isset($_POST["btningresar"]))
 {
-    $query = mysqli_query($conn,"SELECT * FROM usuario WHERE cuenta = '$nombre' AND contrasena ='$pass'");
+    $query = mysqli_query($conn,"SELECT * FROM usuario WHERE cuenta = '$Cuenta' AND contrasena ='$Contrasena'");
     $nr = mysqli_num_rows($query);
     
     if($nr==1)
     {
-        echo "<script> alert('Bienvenido $nombre'); window.location='Bienvenido.php' </script>";
+        echo "<script> alert('Bienvenido $Nombre'); window.location='Bienvenido.php' </script>";
     }else
     {
         echo "<script> alert('Usuario no existe'); window.location='index.html' </script>";
@@ -32,7 +32,7 @@ if(isset($_POST["btnregistrar"]))
     
     if(mysqli_query($conn,$sqlgrabar))
     {
-        echo "<script> alert('Usuario registrado con exito: $nombre'); window.location='Index.html' </script>";
+        echo "<script> alert('Usuario registrado con exito: $Nombre'); window.location='Index.html' </script>";
     }else 
     {
         echo "Error: ".$sqlgrabar."<br>".mysql_error($conn);
